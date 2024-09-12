@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 .navbar {
@@ -23,7 +23,7 @@ body {
 }
 
 .section-title {
-  font-family: Pacifico, cursive;
+  font-family: "Libre Baskerville", serif;
 }
 
 #sobre-o-restaurant,
@@ -67,4 +67,64 @@ a {
   .carousel-item img {
     height: 280px;
   }
+}
+
+#toggleMenu {
+  border: none;
+  background-color: #441010;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#toggleMenu:hover {
+  background-color: #665957;
+}
+
+#toggleMenu:active {
+  transform: scale(0.98);
+}
+
+#menuContent {
+  margin-top: 20px;
+}
+
+#toggleMenu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o botão centralizado no carrossel */
+.carousel-button-container {
+  position: absolute; /* Posiciona o botão absolutamente dentro do carrossel */
+  top: 50%; /* Posiciona o botão verticalmente no meio */
+  left: 50%; /* Posiciona o botão horizontalmente no meio */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centraliza o botão com base na sua própria largura e altura */
+  z-index: 10; /* Garante que o botão fique acima das imagens do carrossel */
+}
+
+#carousel-button {
+  background-color: #441010; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branca */
+  border: none;
+  border-radius: 4px; /* Bordas arredondadas */
+  padding: 25px 40px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mãozinha ao passar sobre o botão */
+  transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+#carousel-button:hover {
+  background-color: #665957; /* Cor de fundo azul escuro ao passar o cursor */
+  transform: scale(1.05); /* Leve aumento de tamanho */
+}
+
+#carousel-button:active {
+  background-color: #665957; /* Cor de fundo azul mais escuro ao clicar */
+  transform: scale(0.95); /* Leve redução de tamanho */
 }

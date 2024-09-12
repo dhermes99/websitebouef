@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Boeuf</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -13,6 +13,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="main.css">
@@ -21,7 +29,7 @@
   <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
       <div class="container">
-        <h1 class="navbar-brand m-0 section-title">Boeuf & frites</h1>
+        <h1 class="navbar-brand m-0 section-title">BOEUF & FRITES</h1>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -69,6 +77,12 @@
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./images/slides/slide3.png" alt="">
             </div>
+            <!-- Botão centralizado -->
+            <div class="carousel-button-container">
+              <a href="#eventos">
+              <button id="carousel-button" class="btn btn-primary">BOOK A TABLE!</button>
+              </a>
+            </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -81,7 +95,8 @@
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
           </div>
-          </div>
+        </div>
+        
           <div class="pt-5 pb-5">
             <div class="container">
               <div class="row">
@@ -93,7 +108,7 @@
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, consequuntur voluptatem. Earum, aliquid, necessitatibus sapiente quis porro rerum sit impedit, temporibus in ipsam quae. Aut possimus ullam odit debitis sed?
                   </p>
-                  <h3 class="section-title">Welcome to <span class="text-colored">Bouef & Frites</span></h3>
+                  <h3 class="section-title">Welcome to <span class="text-colored">The Bouef</span></h3>
                   <p>At Boeuf & Frites, we use grass fed Irish Beef,
                     Using only prime cuts of Fillet & Striplion.
                     Expertly chargrilled to your preferred temperature.
@@ -114,38 +129,56 @@
       <section id="eventos" class="pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                <h2 class="section-title text-center">Our <span class="text-colored">restaurants</span></h2>
             </div>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img src="./images/eventos/bouef.jpg" alt="" class="d-block w-100 rounded mb-2 img-evento">
-                    <h3 class="section-title text-colored fs-4">
+                  <a href="https://www.opentable.ie/restref/client/?restref=259380&lang=en-IE&ot_source=Restaurant%20website&corrid=63115433-8880-4eb5-877a-3b49513c2628">
+                    <img src="./images/boeuf.jpg" alt="" class="d-block w-100 rounded mb-2 img-evento">
+                    <h3 class="section-title text-colored fs-3">
                         <i class="bi bi-calendar-event-fill"></i>
-                        Bouef
+                        Boeuf
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nihil sunt doloribus porro, voluptates provident necessitatibus, tenetur aperiam odit fuga eos atque magnam fugit rerum, excepturi aliquid. Nemo, unde odio!</p>
+                  </a>
+                  <p class="endereco">63 William St S, Dublin 2, D02 CX86</p>
+                    
+                    <p>At Bouef, we specialize in top-quality beef sourced from the finest Irish farms. Our menu features premium cuts, including Ribeye and T-Bone, grilled to your preferred level of doneness.
+
+                      Our free-range poultry is expertly seasoned with our signature blend, ensuring a flavorful and juicy experience with every bite. Each dish is prepared with the utmost care, bringing out the best in every ingredient.</p>
                 </div>
                 <div class="col-md-4">
                   <a href="https://www.opentable.ie/restref/client/?restref=324051&lang=en-IE&ot_source=Restaurant%20website&corrid=36ce9178-60c4-4b63-8697-440d6512c044">
-                    <img src="./images/eventos/coq.jpg" alt="" class="d-block w-100 rounded mb-2 img-evento">
-                    <h3 class="section-title text-colored fs-4">
+                    <img src="./images/boeufcoq.jpg" alt="" class="d-block w-100 rounded mb-2 img-evento">
+                    <h3 class="section-title text-colored fs-3">
                         <i class="bi bi-calendar-event-fill"></i>
                         Boeuf & Coq
                     </h3>
                   </a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nihil sunt doloribus porro, voluptates provident necessitatibus, tenetur aperiam odit fuga eos atque magnam fugit rerum, excepturi aliquid. Nemo, unde odio!</p>
+                  <p class="endereco">20 Suffolk St, Dublin 2</p>
+                    <p>At Bouef & Coq, we offer a unique fusion of beef and poultry dishes, using only the best locally-sourced ingredients. Our beef is chargrilled to perfection, while our free-range chicken is seasoned with our exclusive spices for an exceptional taste.
+
+                      Our dishes are crafted to highlight the rich flavors of our high-quality ingredients, served with an array of gourmet sides and sauces that complement each meal.
+                      
+                      </p>
                 </div>
                 <div class="col-md-4">
                   <a href="https://www.opentable.ie/restref/client/?restref=324042&lang=en-IE&ot_source=Restaurant%20website&corrid=156abd79-52cf-4053-b4b3-37135dccac59">
-                    <img src="./images/eventos/frites.jpg" alt="" class="d-block w-100 rounded mb-2 img-evento">
+                    <img src="./images/boueffrites.jpg" alt="" class="d-block w-100 rounded mb-2 img-evento">
                     
-                    <h3 class="section-title text-colored fs-4">
+                    <h3 class="section-title text-colored fs-3">
                         <i class="bi bi-calendar-event-fill"></i>
                         
                         Bouef & Frites
                    
-                      </h3></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nihil sunt doloribus porro, voluptates provident necessitatibus, tenetur aperiam odit fuga eos atque magnam fugit rerum, excepturi aliquid. Nemo, unde odio!</p>
+                      </h3>
+                       </a>
+                    <p class="endereco">1 Crow Street Temple Bar - Dublin 2 D02 WD54</p>
+                    <p>At Boeuf & Frites, we use grass fed Irish Beef,
+                      Using only prime cuts of Fillet & Striplion.
+                      Expertly chargrilled to your preferred temperature.
+                      
+                      All chicken is Irish free range, which is chargrilled to perfection.
+                      Using Boeuf's Signature Seasoning.</p>
                 </div>
             </div>
         </div>
@@ -156,8 +189,9 @@
         <div class="container">
           <div class="row">
             <h2 class="section-title text-center mb-5">Our <span class="text-colored">Menu</span></h2>
+            <button id="toggleMenu" class="btn btn-primary">Show Menu</button> <!-- Botão para alternar visibilidade -->
           </div>
-          <div class="row">
+          <div id="menuContent" class="row d-none"> <!-- Conteúdo do menu oculto inicialmente -->
             <aside class="col-md-2">
                 <nav class="nav nav-pills flex-column nav-cardapio">
                   <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Non-alcoholic Drinks</button>
@@ -173,33 +207,33 @@
                   <div class="tab-pane active" id="bebidas-sem-alcool">
                     <div class="row">
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                     </div>
@@ -207,13 +241,13 @@
                   <div class="tab-pane" id="bebidas-alcoolicas">
                     <div class="row">
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       <div class="col-md-3">
-                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="">
-                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                        <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                        <h5 class="text-colored fw-bold mt-2">Item name</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                       </div>
                       
@@ -227,38 +261,38 @@
                       <div class="row">
 
                         <div class="col-md-3">
-                          <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="">
-                          <h5 class="text-colored fw-bold mt-2">Nome da entrada 1</h5>
+                          <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                          <h5 class="text-colored fw-bold mt-2">Item name</h5>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
 
                         <div class="col-md-3">
-                          <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="">
-                          <h5 class="text-colored fw-bold mt-2">Nome da entrada 2</h5>
+                          <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                          <h5 class="text-colored fw-bold mt-2">Item name</h5>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
 
                         <div class="col-md-3">
-                          <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="">
-                          <h5 class="text-colored fw-bold mt-2">Nome da entrada 2</h5>
+                          <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                          <h5 class="text-colored fw-bold mt-2">Item name</h5>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
 
                         <div class="col-md-3">
-                          <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="">
-                          <h5 class="text-colored fw-bold mt-2">Nome da entrada 2</h5>
+                          <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                          <h5 class="text-colored fw-bold mt-2">Item name</h5>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
 
                         <div class="col-md-3">
-                          <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="">
-                          <h5 class="text-colored fw-bold mt-2">Nome da entrada 2</h5>
+                          <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                          <h5 class="text-colored fw-bold mt-2">Item name</h5>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
 
                         <div class="col-md-3">
-                          <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="">
-                          <h5 class="text-colored fw-bold mt-2">Nome da entrada 2</h5>
+                          <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                          <h5 class="text-colored fw-bold mt-2">Item name</h5>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                         
@@ -273,14 +307,14 @@
                         <div class="row">
   
                           <div class="col-md-3">
-                            <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="">
-                            <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                            <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                            <h5 class="text-colored fw-bold mt-2">Item name</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                           </div>
   
                           <div class="col-md-3">
-                            <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="">
-                            <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                            <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                            <h5 class="text-colored fw-bold mt-2">Item name</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                           </div>
                             </div>
@@ -292,14 +326,14 @@
                           <div class="row">
     
                             <div class="col-md-3">
-                              <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg" alt="">
-                              <h5 class="text-colored fw-bold mt-2">Bolo</h5>
+                              <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                              <h5 class="text-colored fw-bold mt-2">Item name</h5>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
     
                             <div class="col-md-3">
-                              <img class="d-block w-100" src="images/cardapio/sobremesas/cupcake.jpg" alt="">
-                              <h5 class="text-colored fw-bold mt-2">CupCake</h5>
+                              <img class="d-block w-100" src="https://placehold.co/600x400" alt="">
+                              <h5 class="text-colored fw-bold mt-2">Item name</h5>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                            </div>
@@ -385,5 +419,6 @@
     </div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
