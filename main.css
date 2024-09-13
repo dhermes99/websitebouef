@@ -109,11 +109,11 @@ a {
 }
 
 #carousel-button {
-  background-color: #441010; /* Cor de fundo azul */
+  background-color: #441010f5; /* Cor de fundo azul */
   color: #fff; /* Cor do texto branca */
   border: none;
   border-radius: 4px; /* Bordas arredondadas */
-  padding: 25px 40px; /* Espaçamento interno */
+  padding: 20px 35px; /* Espaçamento interno */
   font-size: 16px; /* Tamanho da fonte */
   cursor: pointer; /* Cursor de mãozinha ao passar sobre o botão */
   transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
@@ -127,4 +127,39 @@ a {
 #carousel-button:active {
   background-color: #665957; /* Cor de fundo azul mais escuro ao clicar */
   transform: scale(0.95); /* Leve redução de tamanho */
+}
+
+#bouef {
+  transition: transform 0.4s ease; /* Adiciona uma transição suave para transformações */
+}
+
+#bouef:hover {
+  transform: scale(1.05);
+  background-color: #44101021;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* styles.css */
+#notification {
+  position: fixed;
+  right: 20px; /* Margem à direita */
+  bottom: 20px; /* Margem inferior */
+  background-color: #441010e3;
+  color: #fff;
+  padding: 20px 16px; /* Reduzido para deixar a notificação menor */
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Levemente reduzido para um efeito mais sutil */
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Tempo de transição reduzido */
+  text-align: center; /* Centraliza o texto dentro da notificação */
+  width: 300px; /* Largura fixa para melhor centralização */
+}
+
+#notification.visible {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
 }
